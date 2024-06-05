@@ -1,3 +1,7 @@
-pool: MyAgentPool
+pool:
+  name: Default
+  demands:
+    - agent.name -equals DESKTOP-0K46F98
+
 steps:
-- bash: echo hello world
+  - bash: echo hello world
